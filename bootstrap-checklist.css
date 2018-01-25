@@ -1,0 +1,20 @@
+  /* allow check marks on drop down menu */
+    
+  ul.dropdown-menu li.active,
+  ul.dropdown-menu li.checked {
+    /* aliases of each other */
+  }
+
+  ul.dropdown-menu li.active a:before,
+  ul.dropdown-menu li.checked a:before {
+    /* default styling for selected items */
+    content: "\e013";
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    /*--adjust as necessary--*/
+    color: rgb(92, 184, 92);
+    font-size: 18px;
+    padding-right: 0.5em;
+  }
